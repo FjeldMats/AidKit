@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="byer_array">
+        <item>Oslo</item>
+        <item>Bergen</item>
+        <item>Trondheim</item>
+        <item>Moss lol</item>
+        <item>Norge</item>
+    </string-array>
+</resources>

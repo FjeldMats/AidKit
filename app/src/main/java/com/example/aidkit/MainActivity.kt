@@ -3,6 +3,7 @@ package com.example.aidkit
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -33,4 +34,9 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    fun openSettings(v: View){
+        startActivity(Intent(this, Settings::class.java))
+    }
+
 }
