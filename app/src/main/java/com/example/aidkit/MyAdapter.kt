@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 
 class MyAdapter(val myDataset: Array<String>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     // Provide a reference to the views for each data item
@@ -18,11 +17,11 @@ class MyAdapter(val myDataset: Array<String>) : RecyclerView.Adapter<MyAdapter.M
     override fun onCreateViewHolder(parent: ViewGroup,
                                     viewType: Int): MyAdapter.MyViewHolder {
         // create a new view
-        val textView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.helse_text, parent, false) as Button
+        val knapp = LayoutInflater.from(parent.context)
+            .inflate(R.layout.knapp, parent, false) as Button
         // set the view's size, margins, paddings and layout parameters
 
-        return MyViewHolder(textView)
+        return MyViewHolder(knapp)
     }
 
     // Return the size of your dataset (invoked by the layout manager)

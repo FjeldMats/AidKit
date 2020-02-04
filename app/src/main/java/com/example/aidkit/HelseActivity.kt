@@ -9,12 +9,12 @@ class HelseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_helse)
+        setContentView(R.layout.knapp_liste)
         val helser : Array<String> = arrayOf("ensomhet", "angst", "depresjon", "malaria", "a" , "b", "c","ensomhet", "angst", "depresjon", "malaria", "a" , "b", "c")
         var viewManager = LinearLayoutManager(this)
         var viewAdapter = MyAdapter(helser)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.HelseListe).apply {
+        val recyclerView = findViewById<RecyclerView>(R.id.KnappListe).apply {
             // use this setting to improve performance if you know that changes
             // in content do not change the layout size of the RecyclerView
             setHasFixedSize(false)

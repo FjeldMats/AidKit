@@ -10,14 +10,14 @@ class OkonomiActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_okonomi)
+        setContentView(R.layout.knapp_liste)
 
-        val okonomi : Array<String> = arrayOf("Lånekassen", "Budkjett", "Mat","a","b","c","a","b","c","a","b","c");
+        val okonomi : Array<String> = arrayOf("Lånekassen", "Budkjett", "Mat","a","b","c","a","b","c","a","b","c","ølllll");
 
         var viewManager = LinearLayoutManager(this)
         var viewAdapter = MyAdapter(okonomi)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.OkonomiListe).apply {
+        val recyclerView = findViewById<RecyclerView>(R.id.KnappListe).apply {
             // use this setting to improve performance if you know that changes
             // in content do not change the layout size of the RecyclerView
             setHasFixedSize(false)
