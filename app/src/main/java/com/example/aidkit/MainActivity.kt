@@ -16,20 +16,20 @@ class MainActivity : AppCompatActivity() {
         val btn3 = findViewById<Button>(R.id.OkonomiBtn)
 
 
-        val HelseActivity = Intent(this, HelseActivity::class.java)
-        val SosialtActivity = Intent(this, SosialtActivity::class.java)
-        val OkonomiActivity = Intent(this, OkonomiActivity::class.java)
+        val helseActivity = Intent(this, HelseActivity::class.java)
+        val sosialtActivity = Intent(this, SosialtActivity::class.java)
+        val okonomiActivity = Intent(this, OkonomiActivity::class.java)
 
         btn1.setOnClickListener{
-            startActivity(HelseActivity)
+            startActivity(helseActivity)
         }
 
         btn2.setOnClickListener{
-            startActivity(SosialtActivity)
+            startActivity(sosialtActivity)
         }
 
         btn3.setOnClickListener{
-            startActivity(OkonomiActivity)
+            startActivity(okonomiActivity)
         }
 
     }
