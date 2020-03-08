@@ -10,7 +10,7 @@ class HelseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.knapp_liste)
-        val helser : Array<String> = arrayOf("ensomhet", "angst", "depresjon", "malaria", "a" , "b", "c","ensomhet", "angst", "depresjon", "malaria", "a" , "b", "c")
+        val helser : Array<String> = arrayOf("ensomhet", "angst", "depresjon", "utmatelse", "malaria", "a" , "b", "c","ensomhet", "angst", "depresjon", "malaria", "a" , "b", "c")
         var viewManager = LinearLayoutManager(this)
         var viewAdapter = MyAdapter(helser)
 
